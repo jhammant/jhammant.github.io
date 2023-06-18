@@ -1,0 +1,58 @@
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 1em;
+}
+
+h1, h2 {
+    color: #0077cc;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+section {
+    margin-bottom: 2em;
+}
+
+a {
+    color: #0077cc;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Add some styling for the social share buttons */
+.share-btn {
+    display: inline-block;
+    padding: 0.5em 1em;
+    color: white;
+    text-decoration: none;
+    margin-right: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+.share-btn:hover {
+    opacity: 0.8;
+}
+
+.share-btn.twitter {
+    background-color: #1DA1F2;
+}
+
+.share-btn.facebook {
+    background-color: #3b5998;
+}
+
+.share-btn.linkedin {
+    background-color: #0077B5;
+}
