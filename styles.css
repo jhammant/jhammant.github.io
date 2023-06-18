@@ -56,3 +56,7 @@ a:hover {
 .share-btn.linkedin {
     background-color: #0077B5;
 }
+img {
+    width: 100%; /* This will make the image width 100% of its parent container. Adjust as necessary. */
+    height: auto; /* This will keep the aspect ratio of the image intact. */
+}
