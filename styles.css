@@ -60,3 +60,18 @@ img {
     width: 100%; /* This will make the image width 100% of its parent container. Adjust as necessary. */
     height: auto; /* This will keep the aspect ratio of the image intact. */
 }
+
+#faq {
+    background-color: #f9f9f9; /* A light gray */
+    padding: 20px;
+}
+
+#faq h3 {
+    margin-top: 20px;
+    color: #333; /* Dark gray */
+}
+
+#faq p {
+    margin-left: 20px;
+}
+
