@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Exchange - Search</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>AI Exchange</h1>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="topics.html">Topics</a>
+                <a href="search.html">Search</a>
+            </nav>
+        </header>
+        
+        <main class="search">
+            <h2>Search Videos</h2>
+            <p>Find videos by keyword, title, or topic.</p>
+            
+            <div class="search-box">
+                <input type="text" id="search-input" placeholder="Search videos...">
+                <button onclick="performSearch()">Search</button>
+            </div>
+            
+            <div id="search-results">
+                <p>Start typing to search videos...</p>
+            </div>
+        </main>
+        
+        <footer>
+            <p>&copy; 2026 AI Exchange. All rights reserved.</p>
+        </footer>
+    </div>
+    
+    <script src="js/search.js"></script>
+</body>
+</html>
