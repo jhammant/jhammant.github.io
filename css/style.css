@@ -1,216 +1,53 @@
-/* style.css */
-* {
+*,
+*::before,
+*::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
     line-height: 1.6;
-    color: #333;
-    background-color: #f8f9fa;
-}
-
-.container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-header {
-    background-color: #1a1a1a;
-    color: white;
-    padding: 20px 0;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-}
-
-header h1 {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
-}
-
-header nav a {
-    color: white;
-    text-decoration: none;
-    margin-left: 20px;
-    font-size: 1.2rem;
-}
-
-header nav a:hover {
-    text-decoration: underline;
+    color: #222;
+    background: #fafafa;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 main {
-    padding: 40px 0;
-}
-
-h2, h3 {
-    margin-bottom: 20px;
-    color: #1a1a1a;
-}
-
-p {
-    margin-bottom: 20px;
-}
-
-.video-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 30px;
-    margin-top: 40px;
-}
-
-.video-card {
-    background-color: white;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.video-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
-}
-
-.video-card img {
-    width: 100%;
-    height: 180px;
-    object-fit: cover;
-}
-
-.video-card h3 {
-    padding: 15px;
-    font-size: 1.2rem;
-    margin-bottom: 0;
-}
-
-.video-detail {
+    max-width: 36rem;
+    padding: 2rem;
     text-align: center;
 }
 
-.video-header h2 {
-    font-size: 3rem;
-    margin-bottom: 10px;
-}
-
-.video-meta {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    margin-bottom: 40px;
-}
-
-.video-meta span {
-    font-size: 1.2rem;
-    color: #666;
-}
-
-.video-content {
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.video-image img {
-    width: 100%;
-    border-radius: 10px;
-    margin-bottom: 30px;
-}
-
-.video-info h3 {
-    text-align: left;
-    margin-bottom: 15px;
-}
-
-.video-info ul {
-    text-align: left;
-    margin-bottom: 40px;
-}
-
-.video-info li {
-    margin-bottom: 10px;
-    font-size: 1.1rem;
-}
-
-.search-box {
-    display: flex;
-    gap: 10px;
-    margin-bottom: 40px;
-}
-
-.search-box input {
-    flex-grow: 1;
-    padding: 12px;
-    font-size: 1.2rem;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-}
-
-.search-box button {
-    padding: 12px 25px;
-    font-size: 1.2rem;
-    background-color: #0d6efd;
-    color: white;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-}
-
-.search-box button:hover {
-    background-color: #0b5ed7;
-}
-
-.topic-section h3 {
-    margin-bottom: 20px;
+h1 {
     font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 0.25rem;
 }
 
-footer {
-    background-color: #1a1a1a;
-    color: white;
-    text-align: center;
-    padding: 20px 0;
-    margin-top: 80px;
+.tagline {
+    color: #555;
+    margin-bottom: 2rem;
 }
 
-/* Responsive design */
-@media (max-width: 768px) {
-    header h1 {
-        font-size: 2rem;
-    }
-    
-    header nav a {
-        font-size: 1rem;
-        margin-left: 10px;
-    }
-    
-    .video-grid {
-        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-        gap: 20px;
-    }
-    
-    .video-detail h2 {
-        font-size: 2.5rem;
-    }
-    
-    .video-meta {
-        flex-direction: column;
-        gap: 10px;
-    }
-    
-    .search-box {
-        flex-direction: column;
-    }
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.75rem 1.5rem;
 }
 
-@media (max-width: 480px) {
-    header h1 {
-        font-size: 1.8rem;
-    }
-    
-    .video-detail h2 {
-        font-size: 2rem;
-    }
+nav a {
+    color: #0366d6;
+    text-decoration: none;
+    font-size: 1.05rem;
+}
+
+nav a:hover {
+    text-decoration: underline;
 }
